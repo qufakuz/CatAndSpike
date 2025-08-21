@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>Cat and Spike</title>
   <style>
-    html, body { margin:0; background:#111; color:#eee; font-family:system-ui, sans-serif; }
+    html, body { overflow: hidden; margin:0; background:#111; color:#eee; font-family:system-ui, sans-serif; }
     .hud { position:fixed; left:12px; top:10px; z-index:10; font-weight:600; }
     canvas { display:block; margin:0 auto; background:#ffffff; }
     #buttonContainer{
@@ -19,7 +19,7 @@
       font-size: 20px;
       font-family:fantasy;
     }
-    @media (max-width:768px){
+    @media (max-width:768px),(min-height:1000px){
       canvas{transform: scale(0.6);
     }
       #canvas-container{
@@ -31,11 +31,11 @@
       .btn{
       margin :10px;
       width: 300px;
-      height: 200px;
+      height: 500px;
     }
     }
     
-    @media (max-width:480px){
+    @media (max-width:480px),(min-height:1000px){
       canvas{transform: scale(0.4);
       
     }
@@ -48,7 +48,7 @@
     .btn{
       margin :10px;
       width: 300px;
-      height: 200px;
+      height: 500px;
     }
   }
   </style>
